@@ -2,6 +2,7 @@ var img;
 
 function preload () {
   img = loadImage ("images/eva.jpg");
+}
 
 function setup() 
 {
