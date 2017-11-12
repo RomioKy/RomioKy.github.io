@@ -8,10 +8,11 @@ var img;
 
 function setup() 
 {
+  img = loadImage("eva.png");
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
   background(125);
-  img = loadImage("eva.png");
+
 
   cores[0]=color(255,0,0);
   cores[1]=color(0,255,0);
@@ -27,9 +28,6 @@ function setup()
 
 
 function draw() {
-  image(img, 0, 0);
-  image(img, 0, height/2, img.width/2, img.height/2);
-
   fill(0,random(100 | 200),random(255 | 200),10);
   rect(0,0,596,842);
 
@@ -55,4 +53,6 @@ function draw() {
   stroke(255,255,255,random(255|100));
   fill(255,255,255,20)
   quad (xFolha, yFolha-ponto1,  xFolha-ponto2, yFolha,  xFolha ,yFolha+ponto1,  xFolha+ponto2, yFolha);// Configuração do losango
+  image(img, 0, 0);
+  image(img, 0, height/2, img.width/2, img.height/2);
 }
