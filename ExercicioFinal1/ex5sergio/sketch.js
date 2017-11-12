@@ -1,8 +1,5 @@
 var xFolha,yFolha,factorCrescimento,  ponto1, ponto2;
 var cores=[];
-var img;
-
-
 
 //function preload() {img = loadImage("eva.png");  //Carrega a imagem}
 
@@ -10,9 +7,7 @@ function setup()
 {
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
-  img = loadImage("eva.jpg");
   background(125);
-
 
   cores[0]=color(255,0,0);
   cores[1]=color(0,255,0);
@@ -25,11 +20,7 @@ function setup()
   ponto2=45;
 }
 
-
-
 function draw() {
-  image(img, 0, 0);
-  image(img, 0, height/2, img.width/2, img.height/2);
   fill(0,random(100 | 200),random(255 | 200),10);
   rect(0,0,596,842);
 

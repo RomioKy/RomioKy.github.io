@@ -7,7 +7,7 @@ function setup()
   x=width/2;
   y=height/2;
   v=30;
-  t=v;
+  t=v;//30
   factorCrescimento = 2;
 }
 
