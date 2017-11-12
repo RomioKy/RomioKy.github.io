@@ -4,13 +4,13 @@ var img;
 
 
 
-function preload() {img = loadImage("eva.png");  //Carrega a imagem
-}
+//function preload() {img = loadImage("eva.png");  //Carrega a imagem}
 
 function setup() 
 {
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
+  img = loadImage("eva.png");
   background(125);
 
 
@@ -44,7 +44,7 @@ function draw() {
 
 
   if (ponto1>200 || ponto1<40) factorCrescimento*=-1; // Permite os losangos irem do tamanho 40 ao 200 e assim estar sempre animado
-
+   
   ponto1+=factorCrescimento
   ponto2+=factorCrescimento
   
@@ -53,4 +53,6 @@ function draw() {
   stroke(255,255,255,random(255|100));
   fill(255,255,255,20)
   quad (xFolha, yFolha-ponto1,  xFolha-ponto2, yFolha,  xFolha ,yFolha+ponto1,  xFolha+ponto2, yFolha);// Configuração do losango
+  image(img, 0, 0);
+  image(img, 0, height/2, img.width/2, img.height/2);
 }
