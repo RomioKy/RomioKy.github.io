@@ -1,8 +1,7 @@
 var xFolha,yFolha,factorCrescimento,  ponto1, ponto2;
 var cores=[];
 
-function preload() {img = loadImage("eva.png");  //Carrega a imagem
-}
+//function preload() {img = loadImage("eva.png");  //Carrega a imagem}
 
 function setup() 
 {
@@ -19,9 +18,7 @@ function setup()
   factorCrescimento=2;
   ponto1=60;
   ponto2=45;
-
 }
-
 
 function draw() {
 
@@ -32,7 +29,7 @@ function draw() {
   strokeWeight(13);
   stroke(39,82,89);
   rect(4,4, 420, 370);
-  rect(4,190, 588, 560);
+  rect(4,190, 584, 645);
   
   if (frameCount%1 === 0) background (80, 42, 41, 20);
 
