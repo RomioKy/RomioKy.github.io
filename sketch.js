@@ -11,7 +11,7 @@ function setup()
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
   img = loadImage("eva.png");
-  background(125);
+  //background(125);
 
 
   cores[0]=color(255,0,0);
@@ -31,7 +31,7 @@ function draw() {
   image(img, 0, 0);
   image(img, 0, height/2, img.width/2, img.height/2);
   fill(0,random(100 | 200),random(255 | 200),10);
-  rect(0,0,596,842);
+  //rect(0,0,596,842);
 
   noFill();
   strokeWeight(13);
