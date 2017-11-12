@@ -10,7 +10,7 @@ function setup()
 {
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
-  img = loadImage("eva.png");
+  img = loadImage("Eva.png");
   background(125);
 
 
