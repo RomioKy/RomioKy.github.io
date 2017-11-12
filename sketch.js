@@ -20,6 +20,8 @@ function setup()
   ponto2=45;
 }
 
+
+
 function draw() {
   fill(0,random(100 | 200),random(255 | 200),10);
   rect(0,0,596,842);
