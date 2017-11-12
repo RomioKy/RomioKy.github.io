@@ -44,7 +44,8 @@ function draw() {
 
 
   if (ponto1>200 || ponto1<40) factorCrescimento*=-1; // Permite os losangos irem do tamanho 40 ao 200 e assim estar sempre animado
-   
+    else (ponto1>200 || ponto1<40) factorCrescimento*=+1; 
+
   ponto1+=factorCrescimento
   ponto2+=factorCrescimento
   
