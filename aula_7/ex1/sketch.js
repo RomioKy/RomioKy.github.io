@@ -1,8 +1,13 @@
 var t, n, numLinhas, numColunas, escolhaForma;
 
+function preload() {
+  meuSVG = loadImage ('meuVector.svg')
+  meuSVG = loadImage ('meuVector.svg')
+}
+
 function setup() 
 {
-  createCanvas (windowWidth, windowHeight); 
+  createCanvas (596, 842, SVG);
   frameRate(1)
 }
 
