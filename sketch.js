@@ -2,7 +2,7 @@ ar img;  // Declare variable 'img'.
 
 function setup() {
   createCanvas(720, 400);
-  img = loadImage("eva.jpg");  // Load the image
+  img = loadImage("eva.png");  // Load the image
 }
 
 function draw() {
