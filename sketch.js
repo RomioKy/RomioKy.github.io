@@ -8,7 +8,6 @@ var img;
 
 function setup() 
 {
-  img = loadImage("eva.png");
   frameRate(10);//velocidade dos objectos 
   createCanvas (596, 842);
   background(125);
@@ -23,6 +22,7 @@ function setup()
   factorCrescimento=2;
   ponto1=60;
   ponto2=45;
+  img = loadImage("eva.png");
 }
 
 
